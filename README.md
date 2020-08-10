@@ -48,7 +48,6 @@ _The **Diet App** is an application that will allow to find any data you want ab
 |      React       | _Front end architecture to render data on page_ |
 |   React Router   | _Will be used to change re-direct to each view_ |
 | Rails | _Will be used as the backend framework_ |
-|     Body-parser     | _Used to parse json response data_ |
 
 <br>
 
@@ -56,39 +55,20 @@ _The **Diet App** is an application that will allow to find any data you want ab
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
-
-![Dummy Link](url)
+![https://wireframe.cc/UWzwbu](url)
 
 - Desktop Landing
 
-![Dummy Link](url)
+![https://wireframe.cc/eNSvq5](url)
 
-- Desktop Hero
+- Desktop Food Display
 
-![Dummy Link](url)
+![https://wireframe.cc/eUXVz0](url)
 
-- Resource Index
-
-![Dummy Link](url)
-
-- Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
-
-#### Component Tree
-
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. 
+- Profile Display
 
 #### Component Hierarchy
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
 
 ``` structure
 
@@ -124,7 +104,6 @@ src
 
 #### Time Estimates
 
-> Use this section to estimate the time necessary to build out each of the components you've described above.
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
@@ -141,7 +120,7 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
+https://app.lucidchart.com/invitations/accept/8393550c-1514-48ee-992c-54eb04df0220
 
 <br>
 
