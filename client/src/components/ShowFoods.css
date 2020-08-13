@@ -1,0 +1,20 @@
+.showFoods-div {
+  display:flex;
+  justify-content: space-evenly;
+  margin: 15px;
+  margin: 0 auto;
+  border: 1px solid black;
+  flex-flow: column wrap;
+  width: 800px;
+  height: 500px;
+}
+
+.showFoods-info{
+  display: flex;
+  align-self: flex-start;
+  margin: 5px;
+}
+
+.display-none{
+  display: none;
+}

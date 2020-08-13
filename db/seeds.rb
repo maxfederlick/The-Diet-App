@@ -7,5 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-@admin = User.create(username: 'admin', email: 'admin@email.com', password: '123456')
-puts "#{User.count} users created"
+
+@admin = User.create(username: 'Max', email: 'mfederlick@gmail.com', password: '123456')
+
+@chickenparm = Recipe.create(name: 'chickenparm', ingredients: 'chicken', user: @admin)
+
+
+
