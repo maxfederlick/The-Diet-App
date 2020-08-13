@@ -26,6 +26,14 @@ export default function Main(props) {
     apiCall()
   }, [passedFoods], [quantity])
 
+  // useEffect(() => {
+  //   const apiCall = async () => {
+  //     const data = await axios(`https://api.edamam.com/api/nutrition-data?app_id=37000fbe&app_key=9c53c5c2040754304d57c7c52c20652f&ingr=${quantity}%20${passedFoods}`);
+  //     setFoods(Object.values(data.data.totalNutrients))
+  //   }
+  //   apiCall()
+  // }, [passedFoods], [quantity])
+
   console.log(foods)
   console.log(passedFoods)
 

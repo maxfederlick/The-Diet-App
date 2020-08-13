@@ -8,9 +8,7 @@
 
 
 
-@admin = User.create(username: 'Max', email: 'mfederlick@gmail.com', password: '123456')
-
-@chickenparm = Recipe.create(name: 'chickenparm', ingredients: 'chicken', user: @admin)
+@chicken = Food.create(name: 'chicken', quantity: 'one', recipe: @chickenparm)
 
 
 

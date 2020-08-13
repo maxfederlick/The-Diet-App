@@ -3,22 +3,27 @@ class FoodsController < ApplicationController
 
   # GET /foods
   def index
-    @foods = Food.all
+    @recipe = Recipe.find(params[:recipe_id])
+    @foods = Food.where(recipe_id: params[:recipe_id])
 
     render json: @foods
   end
 
   # GET /foods/1
   def show
+    @recipe = Recipe.find(params[:recipe_id])
+    @food = Food.where(recipe_id: params[:recipe_id])
+
     render json: @food
   end
 
   # POST /foods
   def create
-    @food = Food.new(food_params)
+    @recipe = Recipe.find(params[:recipe_id])
+    @food = Food.where(recipe_id: @recipe.id).new(food_params)
 
     if @food.save
-      render json: @food, status: :created, location: @food
+      render json: @food, status: :created
     else
       render json: @food.errors, status: :unprocessable_entity
     end
