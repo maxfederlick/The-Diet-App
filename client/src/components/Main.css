@@ -1,0 +1,13 @@
+.search-text{
+  text-align: center;
+  color: white;
+}
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+main {
+  color: white
+}

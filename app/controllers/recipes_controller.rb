@@ -7,7 +7,7 @@ class RecipesController < ApplicationController
     @user = User.find(params[:user_id])
     @recipes = Recipe.where(user_id: params[:user_id])
 
-    render json: @recipes
+    render json: @recipes, include: @foods
   end
 
   # GET /recipes/1

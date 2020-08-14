@@ -10,12 +10,12 @@ export const readOneRecipe = async (id) => {
   return resp.data;
 }
 
-export const postFood = async (id, name, quantity) => {
-  const resp = await api.post(`/users/${id}/recipes/${id}/foods`, { food: name, quantity});
+export const postFood = async (id, recipe_id, foodData) => {
+  const resp = await api.post(`/users/${id}/recipes/${recipe_id}/foods`, { food: foodData });
   return resp.data;
 }
 
-export const putRecipe = async (id, recipeData) => {
+export const putFood = async (id, recipeData) => {
   const resp = await api.put(`/recipes/${id}`, { recipe: recipeData });
   return resp.data;
 }

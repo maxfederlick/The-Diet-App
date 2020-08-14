@@ -20,7 +20,7 @@ class FoodsController < ApplicationController
   # POST /foods
   def create
     @recipe = Recipe.find(params[:recipe_id])
-    @food = Food.where(recipe_id: @recipe.id).new(food_params)
+    @food = Food.where(recipe_id: @recipe.id).new(@food_params)
 
     if @food.save
       render json: @food, status: :created
@@ -48,8 +48,7 @@ class FoodsController < ApplicationController
     def set_food
       @food = Food.find(params[:id])
     end
-
-    # Only allow a trusted parameter "white list" through.
+    
     def food_params
       params.require(:food).permit(:name, :quantity, :recipe_id)
     end

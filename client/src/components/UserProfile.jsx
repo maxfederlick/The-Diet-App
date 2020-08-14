@@ -26,7 +26,7 @@ export default function UserProfile(props) {
 
   return (
     <div>
-{profile.map(recipe=> recipe.name)}
+      {profile.map(recipe => <p>{recipe.name}</p>)}
     </div>
   )
 }

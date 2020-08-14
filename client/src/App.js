@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Header from './components/Header'
 import Main from './components/Main';
 import { verifyUser } from './services/auth';
+import Footer from './components/Footer'
+import './App.css'
 
 
 
@@ -20,7 +22,7 @@ export default function App() {
 
   return (
     <>
-      <div>
+      <div className="whole-div">
         <Header
           currentUser={currentUser}
           setCurrentUser={setCurrentUser}
@@ -28,6 +30,7 @@ export default function App() {
         <Main setCurrentUser={setCurrentUser}
           currentUser={currentUser}
         />
+        <Footer />
       </div>
       </>
   );

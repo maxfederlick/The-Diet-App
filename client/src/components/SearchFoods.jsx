@@ -5,8 +5,8 @@ export default function SearchFoods(props) {
   let [foodSearch, setFoodSearch] = useState("")
   let [quantity1, setQuantity1] = useState("")
 
-  let [foodSearch2, setFoodSearch2] = useState("")
-  let [quantity2, setQuantity2] = useState("")
+  // let [foodSearch2, setFoodSearch2] = useState("")
+  // let [quantity2, setQuantity2] = useState("")
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -24,28 +24,30 @@ export default function SearchFoods(props) {
     setFoodSearch(e.target.value)
   }
 
-// submit for second form
-  const handleSubmit1 = (e) => {
-    e.preventDefault()
-    props.setPassedFoods(foodSearch)
-  }
+// // submit for second form
+//   const handleSubmit1 = (e) => {
+//     e.preventDefault()
+//     props.setPassedFoods1(foodSearch)
+//     props.setQuantity1(quantity2)
+//   }
   
-// quantity for second form
-  const handleChange2 = (e) => {
-    e.preventDefault()
-    setQuantity2(e.target.value)
-  }
+// // quantity for second form
+//   const handleChange2 = (e) => {
+//     e.preventDefault()
+//     setQuantity2(e.target.value)
+//   }
 
-  const handleChange3 = (e) => {
-    e.preventDefault()
-    setFoodSearch2(e.target.value)
-  }
+//   const handleChange3 = (e) => {
+//     e.preventDefault()
+//     setFoodSearch2(e.target.value)
+//   }
 
 
   
   return (
     <>
-      <form onSubmit={handleSubmit}>
+       <h3 className = "search-text" >Search For Your Food</h3>
+      <form className="search-form" onSubmit={handleSubmit}>
       <label>Quantity
     <select onChange={handleChange1}>
         <option>Select a quantity</option>
@@ -67,7 +69,7 @@ export default function SearchFoods(props) {
     <button>Submit</button>
       </form>
 
-      {props.passedFoods && (
+      {/* {props.passedFoods && (
         <form onSubmit={handleSubmit1}>
           <label>Quantity
     <select onChange={handleChange2}>
@@ -88,7 +90,7 @@ export default function SearchFoods(props) {
           </label>
           <button>Submit</button>
         </form>
-      )}
+      )} */}
       </>
 )
 }

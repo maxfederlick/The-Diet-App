@@ -1,19 +1,35 @@
 header {
-  padding: 10px 16px;
-  background: #555;
-  color: #f1f1f1;
-}
-
-.content {
-  padding: 16px;
-}
-
-.sticky {
-  position: fixed;
+  background: white;
+  color: black;
+  height: 5%;
+  width: 100vw;
   top: 0;
-  width: 100%
+  position: relative;
 }
 
-.sticky + .content {
-  padding-top: 102px;
+.header-title {
+  margin-left: 25px;
 }
+
+.header-link1 {
+  position: absolute;
+  text-decoration: none;
+  top:10px;    
+  right:20px; 
+}
+
+.header-link2 {
+  position: absolute;
+  text-decoration: none;
+  top:10px;    
+  right:100px; 
+}
+
+.header-link3 {
+  position: absolute;
+  text-decoration: none;
+  top:10px;    
+  right: 220px; 
+}
+
+
